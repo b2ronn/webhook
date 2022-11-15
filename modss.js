@@ -6713,7 +6713,7 @@
 				$('.settings__title').append(" KinoPub");
 			}
 			if (e.name == 'settings_modss') {
-			  $('.settings__title').text("MODS's");
+			  $('.settings__title').text("cloneMODS's");
 			  var title = $('[data-name="priority_balanser"] .settings-param__value', e.body);
 			  title.text(title.text().split('<').shift());
 			}
@@ -6727,7 +6727,7 @@
 			}, 3000);
 			Lampa.SettingsApi.addComponent({
 				component: 'settings_modss',
-				name: "MODS's",
+				name: "cloneMODS's",
 				icon: "<svg viewBox='0 0 24 24' xml:space='preserve' xmlns='https://www.w3.org/2000/svg'><path d='M19.7.5H4.3C2.2.5.5 2.2.5 4.3v15.4c0 2.1 1.7 3.8 3.8 3.8h15.4c2.1 0 3.8-1.7 3.8-3.8V4.3c0-2.1-1.7-3.8-3.8-3.8zm-2.1 16.4c.3 0 .5.2.5.5s-.2.5-.5.5h-3c-.3 0-.5-.2-.5-.5s.2-.5.5-.5h1V8.4l-3.2 5.4-.1.1-.1.1h-.6s-.1 0-.1-.1l-.1-.1-3-5.4v8.5h1c.3 0 .5.2.5.5s-.2.5-.5.5h-3c-.3 0-.5-.2-.5-.5s.2-.5.5-.5h1V7.1h-1c-.3 0-.5-.2-.5-.5s.2-.5.5-.5h1.7c.1 0 .2.1.2.2l3.7 6.2 3.7-6.2.2-.2h1.7c.3 0 .5.2.5.5s-.2.5-.5.5h-1v9.8h1z' fill='#ffffff' class='fill-000000'></path></svg>"
 			});
 			Lampa.SettingsApi.addParam({
