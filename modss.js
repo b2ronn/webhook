@@ -55,7 +55,7 @@
       Lampa.Manifest.plugins = {
         type: 'video',
         version: '1.0.0',
-        name: 'Онлайн - MODS\'s',
+        name: 'Онлайн - cloneMODS\'s',
         description: '',
         component: 'modss_online',
         onContextMenu: function onContextMenu(object) {
@@ -67,7 +67,7 @@
         onContextLauch: function onContextLauch(object) {
           Lampa.Activity.push({
   					url: '',
-  					title: Lampa.Lang.translate('title_online') + " MODS's",
+  					title: Lampa.Lang.translate('title_online') + " cloneMODS's",
   					component: 'modss_online',
   					search: card.title,
   					search_one: card.title,
@@ -102,7 +102,7 @@
         function openOnline(){
          Lampa.Activity.push({
         	url: '',
-        	title: Lampa.Lang.translate('title_online') + " MODS's",
+        	title: Lampa.Lang.translate('title_online') + " cloneMODS's",
         	component: 'modss_online',
         	search: card.title,
         	search_one: card.title,
@@ -4460,7 +4460,7 @@
   			if (object.title == 'IPTV') {
   				Lampa.Activity.push({
   					url: data + '?' + ForkTV.user_dev,
-  					title: 'MODS\'s TV',
+  					title: 'cloneMODS\'s TV',
   					component: 'modss_tv',
   					page: 1
   				});
@@ -6697,7 +6697,7 @@
 				Lampa.Settings.main().render().find('[data-component="filmix"], [data-component="rezka_param"], [data-component="pub_param"], [data-component="filmix_param"], [data-component="fork_param"], [data-component="modss_tv_param"]').addClass('hide');
 			}
 			if (e.name == 'mods_proxy') {
-				$('.settings__title').text(Lampa.Lang.translate('title_proxy') + " MODS's");
+				$('.settings__title').text(Lampa.Lang.translate('title_proxy') + " cloneMODS's");
 				var ads = ['<div style="padding: 1.5em 2em; padding-top: 10px;">', '<div style="background: #3e3e3e; padding: 1em; border-radius: 0.3em;">', '<div style="font-size: 1em; margin-bottom: 1em; color: #ffd402;">#{info_attention} ⚠</div>', '<div style="line-height: 1.4;">#{online_proxy_title_descr}</div>', '</div>', '</div>'].join('');
 				e.body.find('[data-name="mods_proxy_all"]').before(Lampa.Lang.translate(ads));
 			} else $('.settings__title').text(Lampa.Lang.translate('menu_settings'));
@@ -7314,7 +7314,7 @@
 			//Proxy mods
 			Lampa.SettingsApi.addComponent({
 				component: 'mods_proxy',
-				name: Lampa.Lang.translate('title_proxy') + ' MODS\'s',
+				name: Lampa.Lang.translate('title_proxy') + ' cloneMODS\'s',
 				icon: '<svg fill=none height=46 viewBox="0 0 42 46"xmlns=http://www.w3.org/2000/svg><rect height=18 rx=1.5 width=39 y=26.5 x=1.5 stroke=white stroke-width=3 /><circle cx=9.5 cy=35.5 fill=white r=3.5 /><circle cx=26.5 cy=35.5 fill=white r=2.5 /><circle cx=32.5 cy=35.5 fill=white r=2.5 /><circle cx=21.5 cy=5.5 fill=white r=5.5 /><rect height=3 rx=1.5 width=11 y=4 fill=white x=31 /><rect height=3 rx=1.5 width=11 y=4 fill=white /><rect height=7 rx=1.5 width=3 y=14 fill=white x=20 /></svg>'
 			});
 			Lampa.SettingsApi.addParam({
